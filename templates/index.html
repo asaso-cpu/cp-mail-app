@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPメール</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <header>
+                <h1>CPメール</h1>
+            </header>
+            <div class="content">
+                <form class="form" id="userForm">
+                    <div class="form-group">
+                        <label for="user-id">ユーザーID(Tora-Net Portal)</label>
+                        <input type="text" id="user-id" name="user_id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">パスワード(Tora-Net Portal)</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス(通知が送られるアドレス)</label>
+                        <input type="email" id="email" name="recipient_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="schedule">スケジュール (HH:MM)</label>
+                        <input type="time" id="schedule" name="schedule" required>
+                    </div>
+                    <button type="submit">保存</button>
+                    <div id="message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Flask対応のJS読み込み -->
+    <script src="{{ url_for('static', filename='renderer.js') }}"></script>
+    <!-- 右下に画像を配置するコンテナ -->
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='tyutora1.png') }}" alt="チュートラ画像">
+    </div>
+</body>
+</html>

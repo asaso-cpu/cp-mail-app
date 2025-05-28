@@ -1,0 +1,41 @@
+{
+  "name": "cp-mail-app",
+  "version": "1.0.0",
+  "description": "CoursePowerメール通知アプリ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^25.3.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.example.cp-mail-app",
+    "productName": "CP_Mail_App",
+    "files": [
+      "**/*",
+      "!node_modules/*/{test,__tests__,examples}/**",
+      "!**/*.map"
+    ],
+    "extraFiles": [
+      "app.py",
+      "CPmail.py",
+      "crypt_util.py",
+      "user_data.json",
+      {
+        "from": "templates",
+        "to": "templates"
+      },
+      {
+        "from": "static",
+        "to": "static"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "static/tyutora1.png"
+    }
+  }
+}

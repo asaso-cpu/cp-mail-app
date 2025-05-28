@@ -1,0 +1,93 @@
+/* バックグラウンドを白色に設定 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* 背景を白に変更 */
+}
+
+/* 右下に画像を配置するスタイル */
+.image-container {
+    position: absolute;
+    bottom: 180px; /* 下部からの余白 */
+    right: calc(10px + 7.0cm ); /* 右端からの余白 */
+}
+
+.image-container img {
+    width: 150px; /* 画像の幅 */
+    height: auto; /* 高さを自動調整 */
+    border-radius: 8px; /* 角を丸める */
+}
+
+.container {
+    width: 40%;
+    margin: 140px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    background-color: #00688b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+}
+
+/* フォーム部分 */
+.form {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00688b;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f7a;
+}
