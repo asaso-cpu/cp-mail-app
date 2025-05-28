@@ -1,0 +1,8 @@
+[
+    {
+        "user_id": "自分のID（例: example123）",
+        "password": "暗号化されたパスワード（例: abcd1234）",
+        "recipient_email": "自分のメールアドレス（例: user@example.com）",
+        "schedule": "通知したい時間（例: 00:39）"
+    }
+]
