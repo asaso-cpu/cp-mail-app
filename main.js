@@ -69,37 +69,3 @@ app.on('activate', () => {
         createWindow();
     }
 });
-//     pyProc = spawn('python', [script], { cwd });
-
-//     pyProc.stdout.on('data', (data) => {
-//         console.log(`Flask stdout: ${data}`);
-//     });
-
-//     pyProc.stderr.on('data', (data) => {
-//         console.error(`Flask stderr: ${data}`);
-//     });
-
-//     pyProc.on('close', (code) => {
-//         console.log(`Flask process exited with code ${code}`);
-//     });
-// }
-
-// app.whenReady().then(() => {
-//     startFlask();
-//     createWindow();
-// });
-
-// app.on('window-all-closed', () => {
-//     if (pyProc) {
-//         pyProc.kill();
-//     }
-//     if (process.platform !== 'darwin') {
-//         app.quit();
-//     }
-// });
-
-// app.on('activate', () => {
-//     if (BrowserWindow.getAllWindows().length === 0) {
-//         createWindow();
-//     }
-// });
